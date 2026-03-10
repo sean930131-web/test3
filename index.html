@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林愷淇 Kai-Qi Lin | 個人履歷</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        header {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            font-size: 0.9rem;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+            font-size: 1.5rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .card .date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        /* Skills Tags */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background: #e1f0fa;
+            color: var(--accent-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #95a5a6;
+            background: #fdfdfd;
+        }
+
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Print Style */
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; border: none; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>林愷淇 Kai-Qi Lin</h1>
+        <p>亞洲大學 | 學生</p>
+        <div class="contact-info">
+            <div class="contact-item">學號：114018065</div>
+            <div class="contact-item">地點：台中市，台灣</div>
+        </div>
+    </header>
+
+    <div class="content">
+        <section>
+            <h2>教育背景</h2>
+            <div class="card">
+                <h3>亞洲大學 (Asia University)</h3>
+                <p class="date">2025 - 至今</p>
+                <p>專注領域：聽語解剖生理學、心理學</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>學術與專業興趣</h2>
+            <div class="info-grid">
+                <div class="card">
+                    <h3>語言與聽力科學</h3>
+                    <p>深入研究聲帶功能與聽覺神經通路，具備生理學與解剖學基礎知識。</p>
+                </div>
+                <div class="card">
+                    <h3>性格心理學</h3>
+                    <p>對人格特質分析、動機與情緒理論有濃厚興趣與研究心得。</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>技能專長</h2>
+            <div class="tags">
+                <span class="tag">解剖生理學分析</span>
+                <span class="tag">心理學理論應用</span>
+                <span class="tag">自然攝影</span>
+                <span class="tag">社會歷史觀察</span>
+                <span class="tag">跨文化溝通</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>專案與活動經歷</h2>
+            <div class="card">
+                <h3>原住民主題文化研究</h3>
+                <p>針對台灣原住民文化認同與歷史變遷進行深度分析，並撰寫結構性反思報告。</p>
+            </div>
+            <div class="card">
+                <h3>攝影作品集</h3>
+                <p>專注於自然景觀與植物近拍，具備捕捉細節與構圖的美感基礎。</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 林愷淇 - 本網頁由 AI 協助生成</p>
+        <button class="no-print" onclick="window.print()" style="margin-top:10px; padding:5px 15px; cursor:pointer;">列印/存為PDF</button>
+    </footer>
+</div>
+
+<script>
+    // 未來可在此加入動機式互動功能
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log("林愷淇的個人履歷已載入完成");
+    });
+</script>
+
+</body>
+</html>
